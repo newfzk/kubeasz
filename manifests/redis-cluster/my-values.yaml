@@ -4,4 +4,3 @@ redis:
   config:
     # set redis pass
     requirepass: "123456"
-    
