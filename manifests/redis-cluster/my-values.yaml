@@ -1,1 +1,7 @@
 replicas: 1
+redis:
+  ## For all available options see http://download.redis.io/redis-stable/redis.conf
+  config:
+    # set redis pass
+    requirepass: "123456"
+    
