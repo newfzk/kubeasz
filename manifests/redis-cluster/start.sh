@@ -4,8 +4,11 @@ set -x
 ROOT=$(cd `dirname $0`; pwd)
 cd $ROOT
 
-helm install redis \
+helm upgrade -i redis \
 	--create-namespace \
 	--namespace dependency \
 	-f ./values.yaml \
-	./redis-ha
+	-f ./my-values.yaml \
+	./redis-ha \
+	--atomic \
+	--timeout 2m0s
