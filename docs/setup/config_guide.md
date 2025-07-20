@@ -17,7 +17,7 @@
 - 修改容器运行时: CONTAINER_RUNTIME="containerd"
 - 修改集群网络插件：CLUSTER_NETWORK="calico"
 - 修改容器网络地址：CLUSTER_CIDR="192.168.0.0/16"
-- 修改NodePort范围：NODE_PORT_RANGE="30000-32767"
+- 修改NodePort范围：NODE_PORT_RANGE="30000-40000"
 
 ## clusters/xxxx/config.yml
 
